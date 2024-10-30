@@ -1,0 +1,197 @@
+/* Apps.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.auth-form {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+}
+
+.auth-form h2 {
+    margin-bottom: 1rem;
+    color: #4CAF50; /* Green color for headings */
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s;
+}
+
+.auth-form input:focus {
+    border-color: #4CAF50; /* Green focus border */
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.auth-form button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.App-logo {
+    max-width: 150px;
+}
+
+nav {
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #4CAF50; /* Green active link */
+    color: white;
+}
+
+.content {
+    margin: 2rem 0;
+}
+
+footer {
+    text-align: center;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: #e94e77; /* Pink for sign out button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+footer button:hover {
+    background-color: #c6395b;
+}
+
+h2.target {
+    color: #4CAF50; /* Green for section headings */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50; /* Green table header */
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Light gray on row hover */
+}
+
+table button {
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #e94e77; /* Pink for action buttons */
+    color: white;
+    transition: background 0.3s;
+}
+
+table button:hover {
+    background-color: #c6395b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-form {
+        width: 95%;
+    }
+
+    .dashboard {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    table button {
+        padding: 0.2rem 0.4rem;
+    }
+}
